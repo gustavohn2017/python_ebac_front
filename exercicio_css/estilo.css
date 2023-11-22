@@ -1,0 +1,107 @@
+/* Resetando algumas propriedades padrão do navegador e definindo a fonte principal */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilizando o cabeçalho da página */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Estilizando a barra de navegação */
+nav {
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* Estilizando a lista de navegação e os links da barra de navegação */
+#navBar {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    justify-content: center;
+}
+
+#navBar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    background-color: #ddd;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para os links da barra de navegação */
+#navBar li a:hover {
+    background-color: #bbb;
+}
+
+/* Estilizando as seções de categorias */
+.category-section {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando cada seção de categoria */
+.sport {
+    background-color: #f7e6e6; /* Cor de fundo para a seção de esportes */
+}
+
+.economy {
+    background-color: #e6f7e6; /* Cor de fundo para a seção de economia */
+}
+
+.tech {
+    background-color: #e6e6f7; /* Cor de fundo para a seção de tecnologia */
+}
+
+.entertainment {
+    background-color: #f7e6f7; /* Cor de fundo para a seção de entretenimento */
+}
+
+/* Layout das caixas de artigos */
+.article-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+/* Estilizando cada caixa de artigo */
+.news-article {
+    flex: 1;
+    max-width: 300px;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem dentro da caixa de artigo */
+.article-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Conteúdo do artigo */
+.article-content, h2 {
+    text-align: left;
+    color: #333;
+}
+
+/* Estilizando os títulos dos artigos */
+h2 {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}

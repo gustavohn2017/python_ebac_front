@@ -1,0 +1,64 @@
+@use 'reset';
+@use 'variables';
+@use 'media';
+@import 'mixins';
+
+body {    
+  background-color: #f5f6fa;
+}
+
+li {    
+  list-style: none;
+}
+
+// Incluindo o mixin de container
+@include container;
+
+header {    
+  background-color: variables.$primaryColor;    
+  position: sticky;    
+  top: 0;    
+  left: 0;
+}
+
+// Incluindo o mixin de flexbox
+header .container {    
+  @include flex-center(space-between);
+  padding: 16px 0;
+}
+
+// Incluindo o mixin de menu
+@include menu-style;
+
+// Incluindo o mixin de section-padding
+@include section-padding;
+
+.products {    
+  margin-top: 40px;
+
+  // Incluindo o mixin de grid
+  @include grid(3, 1%, 4%);
+  
+  width: 100%;
+}
+
+h2 {    
+  font-size: 2em;    
+  text-align: center;    
+  margin-bottom: 1em;
+}
+
+// Incluindo o mixin de grid
+.products {    
+  @include grid(auto-fit, minmax(180px, 1fr));
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Incluindo o mixin de product-item
+.product-item {    
+  @include product-item;
+
+}
